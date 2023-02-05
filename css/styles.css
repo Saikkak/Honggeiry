@@ -45,13 +45,11 @@ p{
 }
 
 /* Blocks */
-.container{
-    /* margin: 2rem; */
-}
+
 
 /* Links */
 a{
-    text-decoration: none;;
+    text-decoration: none;
 }
 
 /* Lists */
@@ -65,7 +63,9 @@ a{
     background: var(--color-background);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
+    text-align: center;
+    
 }
 .nav__list{
     width: 100%;
@@ -73,7 +73,6 @@ a{
 }
 .nav__item{
     padding: 1rem 2rem;
-    text-align: center;
     
 }
 
@@ -92,8 +91,9 @@ a{
     background-position: 10% 100%, 90% 100%;
 }
 .nav__brand{
-    width: 80%;
+    width: 60%;
     padding: 1rem 2rem;
+    text-align: center;
 }
 
 
