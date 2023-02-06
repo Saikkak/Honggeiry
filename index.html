@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Navigation bar -->
     <nav>
       <div class="nav">
         <a href="/"><img class="nav__brand" src="images/logo.png" alt="" /></a>
@@ -20,5 +21,45 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Hero -->
+    <section class="block block--pink hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">HELLO, MY NAME IS HONGGE CUI</h1>
+          <p class="hero__tagline">
+            I am creating this webpage to introduce myself.
+          </p>
+          <a href="">WHO AM I?</a>
+        </header>
+        <div class="card">
+          <div class="image--box">
+            <picture class="hero__picture">
+              <source
+                type="image/webp"
+                srcset="images/hero-small.webp 1x, images/hero.webp 2x"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/hero-small.jpg 1x, images/hero.jpg 2x"
+              />
+              <img
+                class="hero__full"
+                src="images/hero.jpg"
+                alt="A photo of me"
+              />
+            </picture>
+          </div>
+          <div class="details">
+            <h2>lorem ipsum dolor</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              repellendus, tempore nihil cumque doloribus voluptate perspiciatis
+              eveniet hic recusandae corporis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
