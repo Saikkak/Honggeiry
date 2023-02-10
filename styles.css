@@ -39,9 +39,9 @@ body {
     #a066f16e,
     #c4455647
   );
-  background-size: 400%;
+  background-size: 500%;
   animation: bganimation 10s infinite;
-  backdrop-filter: blur(200px);
+  backdrop-filter: blur(300px);
   }
 }
 
@@ -322,9 +322,12 @@ div {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.hover{
+  display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .icon--list {
-    margin-top: 10rem;
+    margin-top: 20rem;
   }
   .hero__tagline {
     margin-top: 15rem;
@@ -335,6 +338,64 @@ div {
 }
 
 @media screen and (min-width: 1024px) {
+  .hero__content {
+    position: relative;
+  }
+
+  .hero__content > .hover {
+    position: absolute;
+    top: 3rem;
+    right: -90px;
+  }
+
+  .hover{
+    display: inline;
+  }
+
+  .icon-hover{
+    transform: rotate(180deg);
+    height: 30px;
+    width: 30px;
+    animation: icon-sz 3s infinite;
+    filter: invert(59%) sepia(15%) saturate(2148%) hue-rotate(298deg) brightness(100%) contrast(84%);
+  
+  }
+  
+  .text-hover{
+    display: block;
+    font-size: 1rem;
+    animation: text-sz 3s infinite;
+    margin-bottom: 5px;
+  }
+  
+  @keyframes icon-sz {
+    0% {
+      width: 20px;
+    }
+
+    50% {
+      width: 30px;
+    }
+
+    100% {
+        width: 20px;
+      }
+  }
+  
+  @keyframes text-sz {
+    0% {
+      font-size: 1.5rem;
+    }
+  
+    50% {
+      font-size: 2rem;
+    }
+  
+    100% {
+        font-size: 1.5rem;
+      }
+  }
+
   .hero .block__heading {
     margin-top: 15rem;
   }
@@ -401,7 +462,7 @@ div {
 }
 
 .footer a {
-  color: var(--color-headings);
+  color: var(--color-logo);
   transition: color 0.3s;
 }
 
@@ -484,7 +545,7 @@ div {
   height: 250px;
   background: #e8dbdf;
   text-align: center;
-  border: 1px solid var(--color-logo);
+  box-shadow: 0 0 10px 3px var(--color-btn);
 }
 
 .contact--box img {
@@ -563,6 +624,10 @@ textarea:focus {
   textarea {
     height: 100px;
     width: 700px;
+    margin-bottom: 5rem;
+  }
+  .single--form .btn--primary{
+    margin-bottom: 5rem;
   }
 }
 
@@ -608,7 +673,7 @@ textarea:focus {
 
 .card--main {
   background-color: var(--color-background);
-  box-shadow: -20px -10px 20px 4px #f3f3f3;
+  border: 3px solid var(--color-btn);
 }
 
 .card__header {
