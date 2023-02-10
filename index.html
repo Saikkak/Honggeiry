@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Honggeiry</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Hongge Cui's self introduction.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honggeiry - Let us know me!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet">
   </head>
   <body>
-    <!-- Navigation bar -->
     <nav>
       <div class="nav">
-        <a href="/"><img class="nav__brand" src="images/logo.png" alt="" /></a>
+        <a href="/"
+          ><img class="nav__brand" src="images/logo.png" alt="logo"></a>
         <ul class="list nav__list">
-          <li class="nav__item"><a href="#">About Me</a></li>
-          <li class="nav__item"><a href="#">Education Experience</a></li>
-          <li class="nav__item"><a href="#">My Hobbies</a></li>
-          <li class="nav__item"><a href="#">Contact Me</a></li>
+          <li class="nav__item"><a href="skills.html">My Skills</a></li>
+          <li class="nav__item">
+            <a href="experience.html">Educational Experience</a>
+          </li>
+          <li class="nav__item">
+            <a href="personality.html">My Personality</a>
+          </li>
+          <li class="nav__item"><a href="contact.html">Contact Me</a></li>
         </ul>
       </div>
     </nav>
@@ -26,40 +34,99 @@
     <section class="block block--pink hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">HELLO, MY NAME IS HONGGE CUI</h1>
+          <h1 class="block__heading">
+            HELLO, <br>
+            MY NAME IS HONGGE CUI
+          </h1>
           <p class="hero__tagline">
             I am creating this webpage to introduce myself.
           </p>
-          <a href="">WHO AM I?</a>
+          <a href="skills.html" class="btn btn--primary btn--block">Get Started!</a>
+          <ul class="list icon--list">
+            <li class="icon-container">
+              <a href=""><img class="icon" src="images/facebook.svg" alt=""></a>
+            </li>
+            <li class="icon-container">
+              <a href=""><img class="icon" src="images/twitter.svg" alt=""></a>
+            </li>
+            <li class="icon-container">
+              <a href=""><img class="icon" src="images/instagram.svg" alt=""></a>
+            </li>
+            <li class="icon-container">
+              <a href=""><img class="icon" src="images/wechat.svg" alt=""></a>
+            </li>
+          </ul>
         </header>
-        <div class="card">
+        <div class="box">
           <div class="image--box">
             <picture class="hero__picture">
               <source
                 type="image/webp"
-                srcset="images/hero-small.webp 1x, images/hero.webp 2x"
-              />
+                srcset="images/hero-small.webp 1x, images/hero.webp 2x">
               <source
                 type="image/jpg"
-                srcset="images/hero-small.jpg 1x, images/hero.jpg 2x"
-              />
-              <img
-                class="hero__full"
-                src="images/hero.jpg"
-                alt="A photo of me"
-              />
+                srcset="images/hero-small.jpg 1x, images/hero.jpg 2x">
+              <img src="images/hero.jpg" alt="A photo of me">
             </picture>
           </div>
           <div class="details">
-            <h2>lorem ipsum dolor</h2>
+            <h2>Thank you <br>for visiting my webpage!</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              repellendus, tempore nihil cumque doloribus voluptate perspiciatis
-              eveniet hic recusandae corporis.
+              This photo was taken at a charity shop in knaresborough. I bought
+              it even though I knew it would be totally useless to buy it.
             </p>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="block footer">
+      <div class="container grid footer__sections">
+        <section class="footer__section">
+            <h2 class="footer__heading">My Favourite Games</h2>
+          <div class="">
+            <ul class="list">
+              <li><a href="#">Danganronpa Series</a></li>
+              <li><a href="#">AI: The Somnium Files</a></li>
+              <li><a href="#">Island</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__heading">My Favourite Music</h2>
+          <div class="">
+            <ul class="list">
+              <li><a href="#">廻廻奇譚 - Eve</a></li>
+              <li><a href="#">アメヲマツ、 - 美波</a></li>
+              <li><a href="#">トワイライト - GOOD ON THE REEL</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__heading">My Favourite Anime</h2>
+          <div class="">
+            <ul class="list">
+              <li><a href="#">ハイキュー!!</a></li>
+              <li><a href="#">家庭教師ヒットマンREBORN!</a></li>
+              <li><a href="#">DEATH NOTE</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__heading">My Favourite films</h2>
+          <div class="">
+            <ul class="list">
+              <li><a href="#">Kingsman</a></li>
+              <li><a href="#">First Love</a></li>
+              <li><a href="#">Ready Player One</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="logo">
+          <p class="footer__copyright">Copyright 2023 Hongge Cui</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
