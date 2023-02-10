@@ -13,9 +13,7 @@
   background: var(--color-logo);
   color: white;
 }
-/* img{
-    width: 100%;
-} */
+
 html {
   /* 62.5% of 16px = 10px
     to make calculate simple */
@@ -27,9 +25,12 @@ body {
   font-size: 2rem;
   line-height: 1.5;
   margin: 0;
+}
 
-  /* Animated background */
-  background-image: linear-gradient(
+@media screen and (min-width:768px){
+  body{
+    /* Animated background */
+    background-image: linear-gradient(
     125deg,
     #f8a5c24a,
     #f5ce795f,
@@ -39,8 +40,9 @@ body {
     #c4455647
   );
   background-size: 400%;
-  animation: bganimation 20s infinite;
-  backdrop-filter: blur(100px);
+  animation: bganimation 10s infinite;
+  backdrop-filter: blur(200px);
+  }
 }
 
 @keyframes bganimation {
@@ -600,7 +602,7 @@ textarea:focus {
 }
 
 .card {
-  border-radius: 7px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -621,6 +623,7 @@ textarea:focus {
 .skill {
   transition: transform 0.2s ease-out;
   text-align: center;
+  border-radius: 15px;
 }
 
 .skill__name {
