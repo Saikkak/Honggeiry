@@ -804,7 +804,7 @@ blockquote{
 }
 
 .quote__text:nth-child(even) {
-  background: #efd2d971;
+  background: #f1cbcb71;
 }
 
 .quote__text:nth-child(odd) {
@@ -813,7 +813,7 @@ blockquote{
 
 .card--accent {
   margin-top: 3rem;
-  background-color: #fff;
+  background-color: var(--color-background);
 }
 
 .card--secondary .quote__text:nth-child(even) {
