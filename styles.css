@@ -808,7 +808,7 @@ textarea:focus {
 
 /* Personality */
 .personality {
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 .personality__image > .me {
@@ -822,6 +822,10 @@ textarea:focus {
   font-weight: 250;
 }
 
+blockquote{
+  margin: 0 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .personality__image figcaption {
     font-size: 2rem;
@@ -830,9 +834,10 @@ textarea:focus {
 }
 
 @media screen and (min-width: 1024px) {
-  blockquote {
-    margin-top: 0;
+  .personality {
+    padding: 3rem;
   }
+
   .personality__image {
     margin: 0;
   }
