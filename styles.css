@@ -139,13 +139,11 @@ a {
   display: grid;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -260,6 +258,12 @@ a {
 /* Hero */
 div {
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .hero__tagline {
@@ -589,7 +593,7 @@ textarea:focus {
   border-radius: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
