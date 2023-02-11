@@ -27,36 +27,6 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width:768px){
-  body{
-    /* Animated background */
-    background-image: linear-gradient(
-    125deg,
-    #f8a5c21e,
-    #f5ce7929,
-    #8ff7a43a,
-    #66ecf133,
-    #c890e32e,
-    #c4454527
-  );
-  background-size: 500%;
-  animation: bganimation 10s infinite;
-  backdrop-filter: blur(300px);
-  }
-}
-
-@keyframes bganimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 h1,
 h2,
 h3 {
@@ -356,45 +326,16 @@ div {
     transform: rotate(180deg);
     height: 30px;
     width: 30px;
-    animation: icon-sz 3s infinite;
     filter: invert(59%) sepia(15%) saturate(2148%) hue-rotate(298deg) brightness(100%) contrast(84%);
   
   }
   
   .text-hover{
     display: block;
-    font-size: 1rem;
-    animation: text-sz 3s infinite;
+    font-size: 1.7rem;
     margin-bottom: 5px;
   }
   
-  @keyframes icon-sz {
-    0% {
-      width: 20px;
-    }
-
-    50% {
-      width: 30px;
-    }
-
-    100% {
-        width: 20px;
-      }
-  }
-  
-  @keyframes text-sz {
-    0% {
-      font-size: 1.5rem;
-    }
-  
-    50% {
-      font-size: 2rem;
-    }
-  
-    100% {
-        font-size: 1.5rem;
-      }
-  }
 
   .hero .block__heading {
     margin-top: 15rem;
