@@ -167,6 +167,7 @@ a {
 
 .block__header {
   text-align: center;
+  color: var(--color-headings);
 }
 
 .block__heading {
@@ -469,6 +470,7 @@ div {
 /* Contact Groups */
 .personal--info {
   text-align: center;
+  color: var(--color-headings);
 }
 
 .personal--info p {
@@ -664,10 +666,6 @@ textarea:focus {
 }
 
 /* Showcase Block */
-.block-showcase h2 {
-  color: var(--color-headings);
-}
-
 .block-showcase .list {
   margin-top: 0rem;
 }
