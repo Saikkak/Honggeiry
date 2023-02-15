@@ -112,7 +112,7 @@ a {
 }
 .nav__brand:hover,
 .nav__item > a:hover {
-  color: white;
+  color: var(--color-btn);
 }
 .nav__brand {
   width: 60%;
@@ -413,7 +413,7 @@ div {
 }
 
 .footer a:hover {
-  color: #fff;
+  color: var(--color-btn);
 }
 
 .footer__section {
@@ -478,7 +478,6 @@ div {
 }
 
 .personal--info p {
-  color: #ea7292;
   font-size: 1.8rem;
   padding: 2rem 2rem 0;
 }
