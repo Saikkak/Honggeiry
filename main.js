@@ -130,7 +130,7 @@ const validateInputs = () => {
 const words = [
   {
     description: "A night scene taken when I was in Nanjing for my exam.",
-    image: "images/Nanjing.jpg",
+    image: "Nanjing.d63be7de.jpg",
     word:`
     I am an introverted and independent person. I like studying and thinking on my own.
     I've been to a lot of places on my own for exams.
@@ -138,7 +138,7 @@ const words = [
   },
   {
     description: "I just did Omikuji and was searching for the meaning of the characters written on the Omikuji.",
-    image: "images/omikuji.jpg",
+    image: "omikuji.e58a48bf.jpg",
     word:`
     I am a person who thinks about others and always put myself in their shoes before doing anything.
     My hobbies are watching anime and playing video games and stuff like that.
@@ -146,7 +146,7 @@ const words = [
   },
   {
     description: "Me (in Hutao costume) and my friends in MCM Comic Con.",
-    image: "images/mcm.jpg",
+    image: "mcm.639196f6.jpg",
     word:`
     My favourite game company is Spike Chunsoft. I especially like the plot design of the games under it.
     Sometimes I do cosplay. Some of the characters I have cosplayed are: Hutao (From Genshin Impact), Kaguya Shinomiya (From
