@@ -145,8 +145,8 @@ const words = [
     Japanese is my favourite language and I have been teaching myself Japanese for over 3 years.`,
   },
   {
-    description: "Me (in Hutao costume) and my friends in MCM Comic Con.",
-    image: "mcm.2128bbbe.jpg",
+    description: "Me in Amiya costume(left) and in Hutao costume(right).",
+    image: "cos.d8a8e397.jpg",
     word:`
     My favourite game company is Spike Chunsoft. I especially like the plot design of the games under it.
     Sometimes I do cosplay. Some of the characters I have cosplayed are: Hutao (From Genshin Impact), Kaguya Shinomiya (From
