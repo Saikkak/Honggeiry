@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personality</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   </head>
-  <body>
-    <nav>
-      <div class="nav">
-        <a href="/"
-          ><img class="nav__brand" src="images/logo.png" alt="logo"
-        /></a>
-        <ul class="list nav__list">
-          <li class="nav__item"><a href="index.html">Home</a></li>
-          <li class="nav__item"><a href="skills.html">My Skills</a></li>
-          <li class="nav__item">
-            <a href="experience.html">Educational Experience</a>
-          </li>
-          <li class="nav__item"><a href="#">My Personality</a></li>
-          <li class="nav__item"><a href="contact.html">Contact Me</a></li>
-        </ul>
+
+  <body class="body">
+    <nav class="collapsible nav">
+      <div class="collapsible__header">
+        <img class="nav__brand" src="images/logo.png" alt="logo">
+        <img class="icon toggler collapsible__chevron" src="images/chevron.svg" alt="">
       </div>
+      <ul class="collapsible__content list nav__list">
+        <li class="nav__item"><a href="index.html">Home</a></li>
+        <li class="nav__item"><a href="skills.html">My Skills</a></li>
+        <li class="nav__item">
+          <a href="experience.html">Educational Experience</a>
+        </li>
+        <li class="nav__item">
+          <a href="personality.html">My Personality</a>
+        </li>
+        <li class="nav__item"><a href="contact.html">Contact Me</a></li>
+      </ul>
     </nav>
-    <section class="block">
-      <header class="block__header">
-        <h1>My Personalities</h1>
-        <p>Some words I would like to say...</p>
-      </header>
+
+    <div class="toggle">
+      <p id="mode" class="modeToggle bi bi-moon-fill">Dark Mode</p>
+    </div>
+
+    <header class="block__header">
+      <h1>My Personalities</h1>
+      <p>Some words I would like to say...</p>
+    </header>
+
+    <div id="wrapper" class="wrapper">
+      <div class="word-container" id="word-container"></div>
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
+
+    <div id="not-laptop-section" class="block">
       <div class="container">
         <div class="card card--accent personality">
           <div class="grid">
             <figure class="personality__image">
               <img
                 class="me"
-                src="images/omikuji.jpg"
-                alt="I was doing Omikuji"
-              />
-              <br />
+                src="images/Nanjing.jpg"
+                alt="A night scene taken when I was in Nanjing for my exam"
+              >
+              <br>
               <figcaption>
-                I just did Omikuji and was searching for the meaning of the
-                characters written on the Omikuji.
+                A night scene taken when I was in Nanjing for my exam.
               </figcaption>
             </figure>
             <blockquote class="quote">
@@ -49,16 +64,40 @@
                 thinking on my own.
               </p>
               <p class="quote__text">
-                I am a good time manager. I never delay my assignments and I
-                have never been late in submitting them.
+                I've been to a lot of places on my own for exams.
+              </p>
+              <p class="quote__text">
+                I am a good time manager. I never delay my assignments and I have never been late in submitting them.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card card--accent personality">
+          <div class="grid">
+            <figure class="personality__image">
+              <img
+                class="me"
+                src="images/omikuji.jpg"
+                alt="I was doing Omikuji"
+              >
+              <br>
+              <figcaption>
+                I just did Omikuji and was searching for the meaning of the
+                characters written on the Omikuji.
+              </figcaption>
+            </figure>
+            <blockquote class="quote">
+              <p class="quote__text">
+                My hobbies are watching anime and playing video games and stuff like that.
+              </p>
+              <p class="quote__text">
+                Japanese is my favourite language and I have been teaching myself Japanese for over 3 years.
               </p>
               <p class="quote__text">
                 I am a person who thinks about others and always put myself in
                 their shoes before doing anything.
-              </p>
-              <p class="quote__text">
-                I am a motivated person. I am willing to overcome all
-                challenges. My ideal job would be to work for a game company.
               </p>
             </blockquote>
           </div>
@@ -72,21 +111,13 @@
                 class="me"
                 src="images/mcm.jpg"
                 alt="I was in MCM Comic Con"
-              />
-              <br />
+              >
+              <br>
               <figcaption>
                 Me (in Hutao costume) and my friends in MCM Comic Con.
               </figcaption>
             </figure>
             <blockquote class="quote">
-              <p class="quote__text">
-                My hobbies are watching anime and playing video games and stuff
-                like that.
-              </p>
-              <p class="quote__text">
-                Japanese is my favourite language and I have been teaching
-                myself Japanese for over 3 years.
-              </p>
               <p class="quote__text">
                 Sometimes I do cosplay. Some of the characters I have cosplayed
                 are: Hutao (From Genshin Impact), Kaguya Shinomiya (From
@@ -100,6 +131,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

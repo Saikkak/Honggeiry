@@ -11,13 +11,17 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
       rel="stylesheet">
+      <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="#">
   </head>
   <body>
-    <nav>
-      <div class="nav">
-        <a href="/"
-          ><img class="nav__brand" src="images/logo.png" alt="logo"></a>
-        <ul class="list nav__list">
+    <nav class="collapsible nav">
+        <div class="collapsible__header">
+          <img class="nav__brand" src="images/logo.png" alt="logo">
+          <img class="icon toggler collapsible__chevron" src="images/chevron.svg" alt="">
+        </div>
+        <ul class="collapsible__content list nav__list">
           <li class="nav__item"><a href="skills.html">My Skills</a></li>
           <li class="nav__item">
             <a href="experience.html">Educational Experience</a>
@@ -27,11 +31,30 @@
           </li>
           <li class="nav__item"><a href="contact.html">Contact Me</a></li>
         </ul>
-      </div>
     </nav>
 
+    
+    <div class="toggle">
+
+      <audio id="player" src="/music/Lingering-Blossom.mp3"></audio>
+      <div class="player">
+        <div class="control">
+          <i class="bi bi-play-fill" id="btn--play"></i>
+        </div>
+        <div class="song-info">
+          HOYO-MiX - Lingering Blossom
+          <div class="bar">
+            <div id="progress"></div>
+          </div>
+        </div>
+
+        <div id="current">0:00</div>
+      </div>
+      <p id="mode" class="modeToggle bi bi-moon-fill">Dark Mode</p>
+    </div>
+    
     <!-- Hero -->
-    <section class="block block--pink hero">
+    <section class="block hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
           <div class="hover">
@@ -87,9 +110,12 @@
 
     <footer class="block footer">
       <div class="container grid footer__sections">
-        <section class="footer__section">
-            <h2 class="footer__heading">My Favourite Games</h2>
-          <div class="">
+        <section class="collapsible collapsible--expanded footer__section">
+            <div class="collapsible__header">
+              <h2 class="footer__heading">My Favourite Games</h2>
+              <img class="icon toggler collapsible__chevron" src="images/chevron.svg" alt="">
+            </div>
+          <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Danganronpa Series</a></li>
               <li><a href="#">AI: The Somnium Files</a></li>
@@ -97,9 +123,12 @@
             </ul>
           </div>
         </section>
-        <section class="footer__section">
-            <h2 class="footer__heading">My Favourite Music</h2>
-          <div class="">
+        <section class="collapsible collapsible--expanded footer__section">
+            <div class="collapsible__header">
+              <h2 class="footer__heading">My Favourite Music</h2>
+              <img class="icon toggler collapsible__chevron" src="images/chevron.svg" alt="">
+            </div>
+          <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">廻廻奇譚 - Eve</a></li>
               <li><a href="#">アメヲマツ、 - 美波</a></li>
@@ -107,9 +136,12 @@
             </ul>
           </div>
         </section>
-        <section class="footer__section">
-            <h2 class="footer__heading">My Favourite Anime</h2>
-          <div class="">
+        <section class="collapsible collapsible--expanded footer__section">
+            <div class="collapsible__header">
+              <h2 class="footer__heading">My Favourite Anime</h2>
+              <img class="icon toggler collapsible__chevron" src="images/chevron.svg" alt="">
+            </div>
+          <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">ハイキュー!!</a></li>
               <li><a href="#">家庭教師ヒットマンREBORN!</a></li>
@@ -117,9 +149,12 @@
             </ul>
           </div>
         </section>
-        <section class="footer__section">
-            <h2 class="footer__heading">My Favourite films</h2>
-          <div class="">
+        <section class="collapsible collapsible--expanded footer__section">
+            <div class="collapsible__header">
+              <h2 class="footer__heading">My Favourite films</h2>
+              <img class="icon toggler collapsible__chevron" src="images/chevron.svg" alt="">
+            </div>
+          <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Kingsman</a></li>
               <li><a href="#">First Love</a></li>
@@ -133,5 +168,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
